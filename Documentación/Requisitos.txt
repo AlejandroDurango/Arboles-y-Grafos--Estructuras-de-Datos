@@ -1,0 +1,32 @@
+-Crear y representar gráficamente un nuevo árbol de búsqueda binario dados una serie de números separados por coma entregados por el usuario, donde cada número representa un nodo(máximo nueves nodos).
+
+-El resultado final debe ser igual al de la página https://visualgo.net/en/bst al momento de crear un nuevo árbol vacío e insertando los valores correspondientes. 
+
+-Adicionar un botón que permita eliminar un nodo.
+
+{ en el boton eliminar textbox ingresa el numero de no a elimianr y eso lo captura el método y elimina del diseño ese.
+
+
+}
+
+-Crear y representar gráficamente un nuevo grafo con nodos ingresados en formato JSON en donde la llave 
+el representa las posiciones de los nodos y la llave el respresenta los arcos con su respectivo peso. 
+
+Ejemplo: {"vl":{"0":{"x":220,"y":60},"1":{"x":160,"y":140},"2":{"x":260,"y":140}},"el":{"0":{"u":0,"v":1,"w":2},"1":{"u":0,"v":2,"w":1}}}. 
+
+Para ambos casos , el tamaño del lienzo recomendado es 640X360.
+
+-Para el grafo creado se requiere mostrar:
+
+-Matriz de adyacencias.
+-Lista de adyacencias.
+-Lista de arcos.
+
+
+Nota: Para los 3 puntos anteriores, el resultado debe ser similar al mostrado en la página: https://visualgo.net/en/graphds
+
+ingrese datos
+9,8,7,16,1,6 
+crear
+lista
+for
