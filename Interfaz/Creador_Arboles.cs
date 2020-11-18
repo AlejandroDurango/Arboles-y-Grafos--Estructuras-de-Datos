@@ -63,7 +63,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
         private void btn_agregarDato_Click(object sender, EventArgs e)
         {
             Graphics Nodo;
-            decimal valor = txt_dato.Value;
+            decimal valor = txt_dato.Text;
             decimal raiz;
 
             if (contador < 10)
@@ -105,7 +105,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
                 {
                     MessageBox.Show(ex.Message);
                 }
-                txt_dato.Value = 1;
+                txt_dato.Text = "" ;
             }
             else
             {
@@ -201,7 +201,5 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
 
            
         }
-    
-
     }
 }
