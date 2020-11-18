@@ -63,55 +63,80 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
         private void btn_agregarDato_Click(object sender, EventArgs e)
         {
             Graphics Nodo;
-            decimal valor = txt_dato.Text;
+            String dato = txt_dato.Text;
             decimal raiz;
-
-            if (contador < 10)
+            String valor_parcial = "";
+            decimal[] dato_final = new decimal[9];
+            int cont = 0;
+            try
             {
-                try
+                if (dato == "")
                 {
-                    if (ArbolBinario.arbolVacio())
+                    throw new Exception("por favor ingrese datos");
+                }
+                for (int i = 0; i <= dato.Length; i++)
+                {
+                    if (i == dato.Length)
                     {
-                        raiz = valor;
-                        ArbolBinario.insertarNodo(valor);
-                        ArbolBinario.raiz.X = posicionraizx;
-                        ArbolBinario.raiz.Y = posicionraizy;
-                        Nodo = CreateGraphics();
-                        Nodo.FillEllipse(Brushes.Black, posicionraizx, posicionraizy, 35, 35);
-                        Nodo.DrawString(Convert.ToString(raiz), Font, Brushes.White, 320, 46);
-                        Pen borde = new Pen(Color.Green, 3);
-                        Nodo.DrawEllipse(borde, posicionraizx, posicionraizy, 35, 35);
-                        contador += 1;
-
-
+                        i--;
+                        dato_final[cont] = Convert.ToDecimal(valor_parcial);
+                        break;
+                    }
+                    if (dato.Substring(i, 1) == ",")
+                    {
+                        dato_final[cont] = Convert.ToDecimal(valor_parcial);
+                        valor_parcial = "";
+                        cont++;
                     }
                     else
                     {
-                        NodoBinario nodoNuevo = ArbolBinario.insertarNodo(valor);
-                        ArbolBinario.padreCoordenadas.calcularPoscision(nodoNuevo);
-                        Nodo = CreateGraphics();
-                        Pen linea = new Pen(Color.Red, 3);
-                        Nodo.DrawLine(linea, ArbolBinario.padreCoordenadas.X + 18, ArbolBinario.padreCoordenadas.Y + 35, nodoNuevo.X + 10, nodoNuevo.Y + 10);
-                        Nodo.FillEllipse(Brushes.Black, nodoNuevo.X, nodoNuevo.Y, 35, 35);
-                        Nodo.DrawString(Convert.ToString(valor), Font, Brushes.White, nodoNuevo.X + 10, nodoNuevo.Y + 10);
-                        Pen borde = new Pen(Color.Green, 3);
-                        Nodo.DrawEllipse(borde, nodoNuevo.X, nodoNuevo.Y, 35, 35);
-                        contador += 1;
+                        valor_parcial += dato.Substring(i, 1);
                     }
-
                 }
-
-                catch (Exception ex)
+                for (int j = 0; j <= cont; j++)
                 {
-                    MessageBox.Show(ex.Message);
-                }
-                txt_dato.Text = "" ;
-            }
-            else
-            {
-                MessageBox.Show("Numero Maximo de nodos permitidos");
-                btn_agregarDato.Visible = false;
+                    if (contador < 10)
+                    {
+                        if (ArbolBinario.arbolVacio())
+                        {
+                            raiz = dato_final[j];
+                            ArbolBinario.insertarNodo(raiz);
+                            ArbolBinario.raiz.X = posicionraizx;
+                            ArbolBinario.raiz.Y = posicionraizy;
+                            Nodo = CreateGraphics();
+                            Nodo.FillEllipse(Brushes.Black, posicionraizx, posicionraizy, 35, 35);
+                            Nodo.DrawString(Convert.ToString(raiz), Font, Brushes.White, 320, 46);
+                            Pen borde = new Pen(Color.Green, 3);
+                            Nodo.DrawEllipse(borde, posicionraizx, posicionraizy, 35, 35);
+                            contador ++;
+                        }
+                        else
+                        {
+                            NodoBinario nodoNuevo = ArbolBinario.insertarNodo(dato_final[j]);
+                            ArbolBinario.padreCoordenadas.calcularPoscision(nodoNuevo);
+                            Nodo = CreateGraphics();
+                            Pen linea = new Pen(Color.Red, 3);
+                            Nodo.DrawLine(linea, ArbolBinario.padreCoordenadas.X + 18, ArbolBinario.padreCoordenadas.Y + 35, nodoNuevo.X + 10, nodoNuevo.Y + 10);
+                            Nodo.FillEllipse(Brushes.Black, nodoNuevo.X, nodoNuevo.Y, 35, 35);
+                            Nodo.DrawString(Convert.ToString(dato_final[j]), Font, Brushes.White, nodoNuevo.X + 10, nodoNuevo.Y + 10);
+                            Pen borde = new Pen(Color.Green, 3);
+                            Nodo.DrawEllipse(borde, nodoNuevo.X, nodoNuevo.Y, 35, 35);
+                            contador ++;
 
+
+                        }
+                        txt_dato.Text = "";
+                    }
+                    else
+                    {
+                        throw new Exception("Numero Maximo de nodos permitidos");
+                        
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+               MessageBox.Show(ex.Message);
             }
         }
 

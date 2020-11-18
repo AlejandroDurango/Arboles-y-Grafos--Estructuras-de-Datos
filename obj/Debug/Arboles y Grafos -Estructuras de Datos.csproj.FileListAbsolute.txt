@@ -3,3 +3,16 @@ C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Da
 C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles_y_Grafos__Estructuras_de_Datos.Properties.Resources.resources
 C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.GenerateResource.cache
 C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.CoreCompileInputs.cache
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\bin\Debug\Arboles y Grafos -Estructuras de Datos.exe.config
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\bin\Debug\Arboles y Grafos -Estructuras de Datos.exe
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\bin\Debug\Arboles y Grafos -Estructuras de Datos.pdb
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\bin\Debug\Newtonsoft.Json.dll
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\bin\Debug\Newtonsoft.Json.xml
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csprojAssemblyReference.cache
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles_y_Grafos__Estructuras_de_Datos.Creador_Arboles.resources
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles_y_Grafos__Estructuras_de_Datos.Properties.Resources.resources
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.GenerateResource.cache
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.CoreCompileInputs.cache
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.CopyComplete
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.exe
+D:\University\3° Semestre\Estructuras de Datos Dinamicos\Proyectos C#\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.pdb
