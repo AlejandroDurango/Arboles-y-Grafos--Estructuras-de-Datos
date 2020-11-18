@@ -1,0 +1,5 @@
+C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csprojAssemblyReference.cache
+C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles_y_Grafos__Estructuras_de_Datos.Creador_Arboles.resources
+C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles_y_Grafos__Estructuras_de_Datos.Properties.Resources.resources
+C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.GenerateResource.cache
+C:\Users\lejod\Source\Repos\AlejandroDurango\Arboles-y-Grafos--Estructuras-de-Datos\obj\Debug\Arboles y Grafos -Estructuras de Datos.csproj.CoreCompileInputs.cache
