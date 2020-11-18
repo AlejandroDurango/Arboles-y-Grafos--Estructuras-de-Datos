@@ -79,6 +79,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ArchivosJSON\datos.json" />
+    <None Include="Interfaz\datos.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

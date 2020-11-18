@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
-
 using Arboles_y_Grafos__Estructuras_de_Datos.Modelo.Grafo;
 
  class LecturaJSOn

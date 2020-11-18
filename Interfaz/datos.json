@@ -1,0 +1,54 @@
+[
+  {
+    "Nodo": [
+      {
+        "identificador": 0,
+        "posicionX": 220,
+        "posicionY": 60
+      },
+      {
+        "identificador": 1,
+        "posicionX": 160,
+        "posicionY": 140
+
+      },
+      {
+        "identificador": 2,
+        "posicionX": 260,
+        "posicionY": 140
+      
+      },
+      {
+        "identificador": 3,
+        "posicionX": 330,
+        "posicionY": 120
+      }
+    ],
+    "Arco": [
+      {
+        "vertice": 0,
+        "posicion_inicialx": 220,
+        "posicion_inicialy": 60,    
+        "posicion_finalx": 160,
+        "posicion_finalY": 140,
+        "valorpeso": 2
+      },
+      {
+        "vertice": 1,
+        "posicion_inicialx": 220,
+        "posicion_inicialy": 60,
+        "posicion_finalx": 260,
+        "posicion_finalY": 140,
+        "valorpeso": 1
+      },
+    {
+        "vertice": 2,
+        "posicion_inicialx": 260,
+        "posicion_inicialy": 140,
+        "posicion_finalx": 330,
+        "posicion_finalY": 120,
+        "valorpeso": 3
+    }
+    ]
+  }
+]

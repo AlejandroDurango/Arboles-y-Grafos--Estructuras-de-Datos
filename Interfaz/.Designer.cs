@@ -143,6 +143,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Agregar Directorio";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_Agregar_Directorio_Click);
             // 
             // grupoJson
             // 
@@ -228,18 +229,23 @@
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(915, 315);
+            this.dataGridView2.Location = new System.Drawing.Point(778, 307);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(145, 129);
+            this.dataGridView2.Size = new System.Drawing.Size(282, 137);
             this.dataGridView2.TabIndex = 9;
+            this.dataGridView2.Visible = false;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(915, 179);
+            this.dataGridView1.Location = new System.Drawing.Point(778, 179);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(145, 129);
+            this.dataGridView1.Size = new System.Drawing.Size(282, 129);
             this.dataGridView1.TabIndex = 11;
             // 
             // Creador_Arboles
