@@ -119,7 +119,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
             {
                 eliminarRaiz();
             }
-            if (buscarNodo(dato) == null)
+            else if (buscarNodo(dato) == null)
             {
                 throw new Exception("No se puede eliminar un nodo que no existe");
             }
