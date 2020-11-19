@@ -47,12 +47,15 @@
             this.Grupo_creacion = new System.Windows.Forms.TabControl();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.txt_EliminarDato = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.grupoJson.SuspendLayout();
             this.GrupoNodo.SuspendLayout();
             this.Grupo_creacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -84,7 +87,6 @@
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
             this.arbolToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
             this.arbolToolStripMenuItem.Text = "Arbol";
-
             // 
             // crearToolStripMenuItem
             // 
@@ -150,7 +152,7 @@
             this.grupoJson.Controls.Add(this.txt_directorio);
             this.grupoJson.Controls.Add(this.button1);
             this.grupoJson.Controls.Add(this.lbl_lecturaJson);
-            this.grupoJson.Location = new System.Drawing.Point(7, 440);
+            this.grupoJson.Location = new System.Drawing.Point(11, 449);
             this.grupoJson.Margin = new System.Windows.Forms.Padding(2);
             this.grupoJson.Name = "grupoJson";
             this.grupoJson.Padding = new System.Windows.Forms.Padding(2);
@@ -161,6 +163,7 @@
             // 
             // GrupoNodo
             // 
+            this.GrupoNodo.Controls.Add(this.txt_EliminarDato);
             this.GrupoNodo.Controls.Add(this.txt_dato);
             this.GrupoNodo.Controls.Add(this.btn_eliminar);
             this.GrupoNodo.Controls.Add(this.btn_agregarDato);
@@ -169,14 +172,14 @@
             this.GrupoNodo.Margin = new System.Windows.Forms.Padding(2);
             this.GrupoNodo.Name = "GrupoNodo";
             this.GrupoNodo.Padding = new System.Windows.Forms.Padding(2);
-            this.GrupoNodo.Size = new System.Drawing.Size(137, 120);
+            this.GrupoNodo.Size = new System.Drawing.Size(495, 42);
             this.GrupoNodo.TabIndex = 0;
             this.GrupoNodo.Text = "Nodo";
             this.GrupoNodo.UseVisualStyleBackColor = true;
             // 
             // txt_dato
             // 
-            this.txt_dato.Location = new System.Drawing.Point(2, 23);
+            this.txt_dato.Location = new System.Drawing.Point(43, 4);
             this.txt_dato.Margin = new System.Windows.Forms.Padding(2);
             this.txt_dato.Name = "txt_dato";
             this.txt_dato.Size = new System.Drawing.Size(135, 20);
@@ -186,7 +189,7 @@
             // btn_eliminar
             // 
             this.btn_eliminar.AutoSize = true;
-            this.btn_eliminar.Location = new System.Drawing.Point(34, 73);
+            this.btn_eliminar.Location = new System.Drawing.Point(408, 5);
             this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(82, 23);
@@ -197,7 +200,7 @@
             // btn_agregarDato
             // 
             this.btn_agregarDato.AutoSize = true;
-            this.btn_agregarDato.Location = new System.Drawing.Point(34, 49);
+            this.btn_agregarDato.Location = new System.Drawing.Point(182, 4);
             this.btn_agregarDato.Margin = new System.Windows.Forms.Padding(2);
             this.btn_agregarDato.Name = "btn_agregarDato";
             this.btn_agregarDato.Size = new System.Drawing.Size(83, 23);
@@ -209,7 +212,7 @@
             // lbl_Valor
             // 
             this.lbl_Valor.AutoSize = true;
-            this.lbl_Valor.Location = new System.Drawing.Point(47, 8);
+            this.lbl_Valor.Location = new System.Drawing.Point(4, 7);
             this.lbl_Valor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Valor.Name = "lbl_Valor";
             this.lbl_Valor.Size = new System.Drawing.Size(35, 13);
@@ -219,11 +222,11 @@
             // Grupo_creacion
             // 
             this.Grupo_creacion.Controls.Add(this.GrupoNodo);
-            this.Grupo_creacion.Location = new System.Drawing.Point(914, 32);
+            this.Grupo_creacion.Location = new System.Drawing.Point(11, 380);
             this.Grupo_creacion.Margin = new System.Windows.Forms.Padding(2);
             this.Grupo_creacion.Name = "Grupo_creacion";
             this.Grupo_creacion.SelectedIndex = 0;
-            this.Grupo_creacion.Size = new System.Drawing.Size(145, 146);
+            this.Grupo_creacion.Size = new System.Drawing.Size(503, 68);
             this.Grupo_creacion.TabIndex = 5;
             this.Grupo_creacion.Visible = false;
             // 
@@ -232,7 +235,7 @@
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(778, 307);
+            this.dataGridView2.Location = new System.Drawing.Point(773, 168);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.Size = new System.Drawing.Size(282, 137);
@@ -244,11 +247,32 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(778, 179);
+            this.dataGridView1.Location = new System.Drawing.Point(773, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(282, 129);
             this.dataGridView1.TabIndex = 11;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            this.dataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(772, 311);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 62;
+            this.dataGridView3.Size = new System.Drawing.Size(282, 137);
+            this.dataGridView3.TabIndex = 12;
+            this.dataGridView3.Visible = false;
+            // 
+            // txt_EliminarDato
+            // 
+            this.txt_EliminarDato.Location = new System.Drawing.Point(269, 7);
+            this.txt_EliminarDato.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_EliminarDato.Name = "txt_EliminarDato";
+            this.txt_EliminarDato.Size = new System.Drawing.Size(135, 20);
+            this.txt_EliminarDato.TabIndex = 12;
+            this.txt_EliminarDato.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Creador_Arboles
             // 
@@ -256,6 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1072, 496);
+            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.grupoJson);
@@ -275,6 +300,7 @@
             this.Grupo_creacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,6 +327,8 @@
         private System.Windows.Forms.TextBox txt_dato;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TextBox txt_EliminarDato;
     }
 }
 
