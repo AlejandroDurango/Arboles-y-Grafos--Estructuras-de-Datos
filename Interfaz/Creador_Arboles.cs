@@ -18,8 +18,6 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
         int contador = 0;
         int posicionraizx = 310;
         int posicionraizy = 36;
-        decimal NodoActual = 0;
-        NodoBinario valorraiz;
         ArbolBinario ArbolBinario = new ArbolBinario();
         List<int[]> nodosRelacionados = new List<int[]>();
         public Creador_Arboles()
@@ -27,24 +25,11 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
             InitializeComponent();
         }
 
-        private void arbolToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         //Boron crear nodos
         private void crearToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Grupo_creacion.Visible = true;
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
+            dataGridView1.Rows[1].Cells[1].Value = 1;
 
         }
 
@@ -124,7 +109,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
 
 
                         }
-                        txt_dato.Text = "";
+                        txt_dato.Text = ""; 
                     }
                     else
                     {
@@ -234,54 +219,42 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos
                 dataGridView2.Rows.Add(nombrevertice, inicia, termina);
             }
 
-            foreach (Nodo n in nodos)
+            //crea filas con los nombres
+            for (int d = 0; d < nodos.Count; d++)
             {
-                int ad1 = 5;
-                int ad2 = 5;
+                int nombrenodo = nodos[d].identificador;
+                dataGridView1.Rows.Add(nombrenodo, null, null);
+            }
+            // lista adyacencia
+            for (int j = 0; j <nodos.Count;j++)
+            {
+                //ingresa los datos adyacentes1
                 for (int i=0;  i<iniciales.Count;i++)
                 {
                     
-                        if (n.identificador == iniciales[i]) 
-                        {
-                             ad1 = finales[i];
-                        }
-                        if (n.identificador == finales[i])
-                        {
-                            ad2 = iniciales[i];
-                        }
-                    int nombrenodo = n.identificador;
-                    dataGridView1.Rows.Add(nombrenodo, ad1, ad2);
+                    if (nodos[j].identificador == finales[i]) 
+                    {
+                        
+                        dataGridView1.Rows[j].Cells[1].Value = Convert.ToString(iniciales[i]);
+                         
+                      
+                    }
+
+                }
+                //ingresa los datos adyacentes2
+                for (int k = 0; k< finales.Count; k++)
+                {
+                    if (nodos[j].identificador == iniciales[k])
+                    {
+                        dataGridView1.Rows[j].Cells[2].Value = Convert.ToString(finales[k]);
+                       
+                    }
                 }
                 
             }
+            
         }
 
-      /*  public void crearListaAdyacencia(List<Nodo> nodos)
-        {
-            for (int i = 0; i < nodos.Count; i++)
-            {
-                foreach (int[] item in nodosRelacionados)
-                {
-                    List<int> nodos_a = new List<int>();
-                    foreach (Nodo nodo in nodos)
-                    {
-                        
-                        if (item[0] == nodo.identificador)
-                        {
-                            
-                            nodos_a.Add(item[0]);
-                            nodos_a.Add(item[1]);
-                        }
-                        if(item[1] == nodo.identificador)
-                        {
-                            nodos_a.Add(item[1]);
-                            nodos_a.Add(item[0]);
-                        }
-                    }
-                    int[] nodosAdyacentes = new int [nodos_a.Count];
-                    dataGridView1.Rows.Add(nodosAdyacentes);
-                }
-            }
-        }*/
+      
     }
 }

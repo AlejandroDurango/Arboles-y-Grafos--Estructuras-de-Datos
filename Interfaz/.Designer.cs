@@ -57,6 +57,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.atrasToolStripMenuItem,
@@ -65,14 +66,14 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1072, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1072, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // atrasToolStripMenuItem
             // 
             this.atrasToolStripMenuItem.Name = "atrasToolStripMenuItem";
-            this.atrasToolStripMenuItem.Size = new System.Drawing.Size(46, 22);
+            this.atrasToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.atrasToolStripMenuItem.Text = "Atras";
             this.atrasToolStripMenuItem.Click += new System.EventHandler(this.atrasToolStripMenuItem_Click);
             // 
@@ -81,14 +82,14 @@
             this.arbolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.crearToolStripMenuItem});
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(72, 29);
             this.arbolToolStripMenuItem.Text = "Arbol";
-            this.arbolToolStripMenuItem.Click += new System.EventHandler(this.arbolToolStripMenuItem_Click);
+
             // 
             // crearToolStripMenuItem
             // 
             this.crearToolStripMenuItem.Name = "crearToolStripMenuItem";
-            this.crearToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.crearToolStripMenuItem.Size = new System.Drawing.Size(155, 34);
             this.crearToolStripMenuItem.Text = "Crear";
             this.crearToolStripMenuItem.Click += new System.EventHandler(this.crearToolStripMenuItem_Click);
             // 
@@ -98,20 +99,20 @@
             this.crearToolStripMenuItem1,
             this.crearConDatosToolStripMenuItem});
             this.grafosToolStripMenuItem.Name = "grafosToolStripMenuItem";
-            this.grafosToolStripMenuItem.Size = new System.Drawing.Size(53, 22);
+            this.grafosToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
             this.grafosToolStripMenuItem.Text = "Grafos";
             // 
             // crearToolStripMenuItem1
             // 
             this.crearToolStripMenuItem1.Name = "crearToolStripMenuItem1";
-            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.crearToolStripMenuItem1.Size = new System.Drawing.Size(256, 34);
             this.crearToolStripMenuItem1.Text = "Crear desde JSON";
             this.crearToolStripMenuItem1.Click += new System.EventHandler(this.crearToolStripMenuItem1_Click);
             // 
             // crearConDatosToolStripMenuItem
             // 
             this.crearConDatosToolStripMenuItem.Name = "crearConDatosToolStripMenuItem";
-            this.crearConDatosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.crearConDatosToolStripMenuItem.Size = new System.Drawing.Size(256, 34);
             this.crearConDatosToolStripMenuItem.Text = "Crear con datos";
             // 
             // txt_directorio
@@ -121,7 +122,6 @@
             this.txt_directorio.Name = "txt_directorio";
             this.txt_directorio.Size = new System.Drawing.Size(868, 20);
             this.txt_directorio.TabIndex = 3;
-            this.txt_directorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_lecturaJson
             // 
@@ -234,6 +234,7 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(778, 307);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.Size = new System.Drawing.Size(282, 137);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.Visible = false;
@@ -245,6 +246,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(778, 179);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(282, 129);
             this.dataGridView1.TabIndex = 11;
             // 

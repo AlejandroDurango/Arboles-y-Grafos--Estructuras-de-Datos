@@ -1,29 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 {
-     class ArbolBinario
+    class ArbolBinario
     {
         public NodoBinario raiz;
-        private decimal nodos;
-        private decimal hojas;
+
         private NodoBinario padre;
         public NodoBinario padreCoordenadas;
         private Boolean posicionPadre;
 
-        public ArbolBinario()
-        {
-            raiz = null;
-            nodos = 0;
-        }
-
         //Buscar un nodo
-
         public NodoBinario buscarNodo(decimal dato)
         {
             return buscarNodo(dato, raiz);
@@ -31,12 +19,12 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 
         private NodoBinario buscarNodo(decimal dato, NodoBinario nodoActual)
         {
-            if(nodoActual == null)
+            if (nodoActual == null)
             {
                 return null;
             }
 
-            if(dato == nodoActual.Dato)
+            if (dato == nodoActual.Dato)
             {
                 return nodoActual;
             }
@@ -59,15 +47,15 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
         // Insertar nodo
         public NodoBinario insertarNodo(decimal dato)
         {
-            if(raiz == null)
+            if (raiz == null)
             {
                 raiz = new NodoBinario(dato);
                 return raiz;
             }
-            else if(buscarNodo(dato) != null)
+            else if (buscarNodo(dato) != null)
             {
                 throw new Exception("No se puede repetir nodos");
-                
+
             }
             else
             {
@@ -77,7 +65,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 
         public Boolean arbolVacio()
         {
-            if(raiz == null)
+            if (raiz == null)
             {
                 return true;
             }
@@ -86,9 +74,9 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 
         private NodoBinario insertarNodo(decimal dato, NodoBinario nodoActual)
         {
-            if(dato < nodoActual.Dato)
+            if (dato < nodoActual.Dato)
             {
-                if(nodoActual.Izquierda == null)
+                if (nodoActual.Izquierda == null)
                 {
                     nodoActual.Izquierda = new NodoBinario(dato);
                     padreCoordenadas = nodoActual;
@@ -123,15 +111,15 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 
         public void eliminarNodo(decimal dato)
         {
-            if(raiz == null)
+            if (raiz == null)
             {
                 throw new Exception("El arbol está vacio");
             }
-            if(dato == raiz.Dato)
+            if (dato == raiz.Dato)
             {
                 eliminarRaiz();
             }
-            if(buscarNodo(dato) == null)
+            if (buscarNodo(dato) == null)
             {
                 throw new Exception("No se puede eliminar un nodo que no existe");
             }
@@ -143,13 +131,13 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
 
         private void eliminarRaiz()
         {
-            if(raiz.esHoja())
+            if (raiz.esHoja())
             {
                 raiz = null;
             }
-            else if(raiz.tieneUnHijo())
+            else if (raiz.tieneUnHijo())
             {
-                if(raiz.PosicionHijo)
+                if (raiz.PosicionHijo)
                 {
                     raiz = raiz.Derecha;
                 }
@@ -161,7 +149,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
             else
             {
                 Boolean mayor = nodoMayor(raiz);
-                if(mayor)
+                if (mayor)
                 {
                     raiz = raiz.Derecha;
                 }
@@ -171,11 +159,11 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
         private void eliminar(decimal dato)
         {
             NodoBinario nodo = buscarNodo(dato);
-            
-            if(nodo.esHoja())
+
+            if (nodo.esHoja())
             {
                 nodo = null;
-                if(posicionPadre)
+                if (posicionPadre)
                 {
                     padre.Derecha = null;
                 }
@@ -184,11 +172,11 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
                     padre.Izquierda = null;
                 }
             }
-            if(nodo.tieneUnHijo())
+            if (nodo.tieneUnHijo())
             {
-                if(nodo.PosicionHijo)
+                if (nodo.PosicionHijo)
                 {
-                    if(posicionPadre)
+                    if (posicionPadre)
                     {
                         padre.Derecha = nodo.Derecha;
                     }
@@ -201,9 +189,9 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
             else
             {
                 Boolean mayor = nodoMayor(nodo);
-                if(mayor)
+                if (mayor)
                 {
-                    if(posicionPadre)
+                    if (posicionPadre)
                     {
                         padre.Derecha = nodo.Derecha;
                     }
@@ -215,7 +203,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
                 }
                 else
                 {
-                    if(posicionPadre)
+                    if (posicionPadre)
                     {
                         padre.Derecha = nodo.Izquierda;
                     }
@@ -223,7 +211,7 @@ namespace Arboles_y_Grafos__Estructuras_de_Datos.Modelo
                     {
                         padre.Izquierda = nodo.Izquierda;
                     }
-                    nodo.Izquierda.Derecha = nodo.Derecha;;
+                    nodo.Izquierda.Derecha = nodo.Derecha; ;
                 }
 
             }
